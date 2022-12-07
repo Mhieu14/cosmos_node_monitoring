@@ -27,7 +27,7 @@
       "type": "grafana",
       "id": "grafana",
       "name": "Grafana",
-      "version": "8.4.4"
+      "version": "8.4.5"
     },
     {
       "type": "panel",
@@ -91,13 +91,13 @@
       }
     ]
   },
-  "description": "Stats of a Cosmos validator",
+  "description": "Dashboard to monitor cosmos validator",
   "editable": true,
   "fiscalYearStartMonth": 0,
-  "gnetId": 14914,
+  "gnetId": 15991,
   "graphTooltip": 0,
   "id": null,
-  "iteration": 1648551259177,
+  "iteration": 1649118286851,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -115,10 +115,6 @@
       "type": "row"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
-      },
       "gridPos": {
         "h": 8,
         "w": 4,
@@ -137,7 +133,7 @@
         "content": "\r\n<table style=\"width:100%; height:100%;border:0px solid black;\">\r\n     <td style=\"text-align: center;vertical-align: middle;border:0px solid black; \"><center><img width=\"300px\" src=\"https://i.ibb.co/zXm7nzr/horiz-color.png\" /></td>\r\n</table>",
         "mode": "html"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "type": "text"
     },
     {
@@ -185,13 +181,10 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": false
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "cosmos_validators_active{chain_id=\"$chain_id\", moniker=\"$moniker\"}",
           "interval": "",
@@ -265,13 +258,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "tendermint_p2p_peers{chain_id=\"$chain_id\"}",
           "format": "time_series",
@@ -353,13 +343,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "cosmos_validator_missed_blocks{chain_id=\"$chain_id\", moniker=\"$moniker\"}",
           "format": "time_series",
@@ -461,12 +448,9 @@
       "pluginVersion": "8.4.0-beta1",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
-          "expr": "cosmos_validators_missed_blocks{chain_id=\"$chain_id\", moniker=\"$moniker\"}",
+          "expr": "cosmos_validator_missed_blocks{chain_id=\"$chain_id\", moniker=\"$moniker\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -523,13 +507,10 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": false
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "tendermint_consensus_state_syncing{chain_id=\"$chain_id\"}",
           "interval": "",
@@ -608,13 +589,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "tendermint_consensus_height{chain_id=\"$chain_id\"}",
           "format": "time_series",
@@ -696,13 +674,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "tendermint_consensus_validators-tendermint_consensus_missing_validators{chain_id=\"$chain_id\"}",
           "format": "time_series",
@@ -775,13 +750,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "tendermint_consensus_missing_validators{chain_id=\"$chain_id\"}",
           "format": "time_series",
@@ -850,13 +822,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "tendermint_consensus_total_txs{chain_id=\"$chain_id\"}",
           "format": "time_series",
@@ -937,13 +906,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "count(cosmos_validators_missed_blocks{chain_id=\"$chain_id\"} > 0) OR on() vector(0)",
           "format": "time_series",
@@ -1013,7 +979,7 @@
                   {
                     "targetBlank": true,
                     "title": "",
-                    "url": "https://devnet.explorer.agoric.net/validator/${__data.fields[\"address\"]}"
+                    "url": "https://$instance.explorers.guru/validator/${__data.fields[\"address\"]}"
                   }
                 ]
               }
@@ -1056,13 +1022,10 @@
           }
         ]
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "sort_desc(topk(10, cosmos_validators_missed_blocks{chain_id=\"$chain_id\"} > 0))",
           "format": "table",
@@ -1145,13 +1108,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "tendermint_consensus_validators_power{chain_id=\"$chain_id\"}",
           "format": "time_series",
@@ -1225,13 +1185,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "tendermint_consensus_missing_validators_power{chain_id=\"$chain_id\"}",
           "format": "time_series",
@@ -1304,13 +1261,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "(tendermint_consensus_missing_validators_power{chain_id=\"$chain_id\"} / tendermint_consensus_validators_power{chain_id=\"$chain_id\"})",
           "format": "time_series",
@@ -1387,13 +1341,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "tendermint_mempool_size{chain_id=\"$chain_id\"}",
           "format": "time_series",
@@ -1474,13 +1425,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "max(cosmos_validators_missed_blocks{chain_id=\"$chain_id\"})",
           "format": "time_series",
@@ -1558,13 +1506,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "round(increase(tendermint_consensus_height{chain_id=\"$chain_id\"}[1m]))",
           "format": "time_series",
@@ -1658,10 +1603,7 @@
       "pluginVersion": "8.4.0-beta1",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "increase(tendermint_consensus_height{chain_id=\"$chain_id\"}[1m])",
           "format": "time_series",
@@ -1751,10 +1693,7 @@
       "pluginVersion": "8.4.0-beta1",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "tendermint_consensus_block_size_bytes{chain_id=\"$chain_id\"}",
           "format": "time_series",
@@ -1826,13 +1765,10 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": false
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "cosmos_validator_jailed{chain_id=\"$chain_id\", moniker=\"$moniker\"}",
           "interval": "",
@@ -1888,13 +1824,10 @@
         "text": {},
         "textMode": "value"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "sort(cosmos_validator_rank{chain_id=\"$chain_id\", moniker=\"$moniker\"})",
           "instant": false,
@@ -1948,13 +1881,10 @@
         "text": {},
         "textMode": "value"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "sum(cosmos_validator_delegations{chain_id=\"$chain_id\", moniker=\"$moniker\"}) by (denom)",
           "instant": true,
@@ -2014,13 +1944,10 @@
         "text": {},
         "textMode": "value"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "cosmos_validator_commission_rate{chain_id=\"$chain_id\", moniker=\"$moniker\"}",
           "interval": "",
@@ -2076,13 +2003,10 @@
         "text": {},
         "textMode": "value"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "count(cosmos_validator_delegations{chain_id=\"$chain_id\", moniker=\"$moniker\"})",
           "instant": false,
@@ -2139,13 +2063,10 @@
         "text": {},
         "textMode": "value"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "count(cosmos_validator_redelegations{chain_id=\"$chain_id\", moniker=\"$moniker\"}) OR on() vector(0)",
           "instant": false,
@@ -2202,13 +2123,10 @@
         "text": {},
         "textMode": "value"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "count(cosmos_validator_unbondings{chain_id=\"$chain_id\", moniker=\"$moniker\"}) OR on() vector(0)",
           "instant": false,
@@ -2257,7 +2175,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2395,13 +2313,10 @@
           }
         ]
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "cosmos_validator_delegations{chain_id=\"$chain_id\", moniker=\"$moniker\"}",
           "format": "table",
@@ -2473,7 +2388,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2483,10 +2398,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "sum(cosmos_validator_redelegations{chain_id=\"$chain_id\", moniker=\"$moniker\"}) by (moniker, denom)",
           "interval": "",
@@ -2614,13 +2526,10 @@
           }
         ]
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "cosmos_validator_redelegations{chain_id=\"$chain_id\", moniker=\"$moniker\"} ",
           "format": "table",
@@ -2689,7 +2598,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2826,13 +2735,10 @@
           }
         ]
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "cosmos_validator_unbondings{chain_id=\"$chain_id\", moniker=\"$moniker\"} ",
           "format": "table",
@@ -2904,7 +2810,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2990,7 +2896,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -3000,10 +2906,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "cosmos_validator_commission{chain_id=\"$chain_id\", moniker=\"$moniker\"}",
           "interval": "",
@@ -3124,13 +3027,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "sum(time() - node_boot_time_seconds{instance=\"$instance\"})",
           "format": "time_series",
@@ -3205,13 +3105,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "count(count(node_cpu_seconds_total{instance=~\"$instance\", mode='system'}) by (cpu))",
           "format": "time_series",
@@ -3279,13 +3176,10 @@
         "showUnfilled": true,
         "text": {}
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "100 - (avg by(alias) (irate(node_cpu_seconds_total{instance=~\"$instance\", mode=\"idle\"}[1m])) * 100)",
           "hide": false,
@@ -3295,10 +3189,7 @@
           "refId": "A"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "(1 - (node_memory_MemAvailable_bytes{instance=~\"$instance\"} / (node_memory_MemTotal_bytes{instance=~\"$instance\"})))* 100",
           "hide": false,
@@ -3308,10 +3199,7 @@
           "refId": "B"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "(1 - (node_memory_SwapFree_bytes{instance=~\"$instance\"} / node_memory_SwapTotal_bytes{instance=~\"$instance\"})) * 100",
           "hide": false,
@@ -3321,10 +3209,7 @@
           "refId": "E"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "100 - (node_filesystem_free_bytes{instance=~\"$instance\", device=\"/dev/sda2\"} *100 / node_filesystem_size_bytes{instance=~\"$instance\", device=\"/dev/sda2\"})",
           "hide": false,
@@ -3334,10 +3219,7 @@
           "refId": "D"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "100 - (node_filesystem_free_bytes{instance=~\"$instance\", device=\"/dev/sda1\"} *100 / node_filesystem_size_bytes{instance=~\"$instance\", device=\"/dev/sda1\"})",
           "hide": false,
@@ -3402,13 +3284,10 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": true
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "node_filefd_allocated{instance=~\"$instance\"}",
           "format": "time_series",
@@ -3565,10 +3444,7 @@
       ],
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "node_filesystem_size_bytes{instance=~'$instance',fstype=~\"ext4|xfs\"}",
           "format": "table",
@@ -3580,10 +3456,7 @@
           "refId": "C"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "node_filesystem_avail_bytes {instance=~'$instance',fstype=~\"ext4|xfs\"}",
           "format": "table",
@@ -3595,10 +3468,7 @@
           "refId": "A"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "1-(node_filesystem_free_bytes{instance=~'$instance',fstype=~\"ext4|xfs\"} / node_filesystem_size_bytes{instance=~'$instance',fstype=~\"ext4|xfs\"})",
           "format": "table",
@@ -3610,10 +3480,7 @@
           "refId": "B"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "expr": "",
           "format": "table",
           "interval": "10s",
@@ -3681,13 +3548,10 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": false,
           "expr": "node_memory_MemTotal_bytes{instance=~\"$instance\"}",
           "format": "time_series",
@@ -3743,7 +3607,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -3772,10 +3636,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "node_load1{instance=~\"$instance\"}*100",
           "format": "time_series",
@@ -3786,10 +3647,7 @@
           "step": 480
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "node_load5{instance=~\"$instance\"}*100",
           "format": "time_series",
@@ -3800,10 +3658,7 @@
           "step": 480
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "node_load15{instance=~\"$instance\"}*100",
           "format": "time_series",
@@ -3938,7 +3793,7 @@
       },
       "paceLength": 10,
       "percentage": false,
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -3948,10 +3803,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "avg(irate(node_cpu_seconds_total{instance=~\"$instance\",mode=\"system\"}[1m]))",
           "format": "time_series",
@@ -3963,10 +3815,7 @@
           "step": 20
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "avg(irate(node_cpu_seconds_total{instance=~\"$instance\",mode=\"user\"}[1m]))",
           "format": "time_series",
@@ -3977,10 +3826,7 @@
           "step": 240
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "avg(irate(node_cpu_seconds_total{instance=~\"$instance\",mode=\"idle\"}[1m]))",
           "format": "time_series",
@@ -3992,10 +3838,7 @@
           "step": 240
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "avg(irate(node_cpu_seconds_total{instance=~\"$instance\",mode=\"iowait\"}[1m]))",
           "format": "time_series",
@@ -4006,10 +3849,7 @@
           "step": 240
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_disk_io_time_seconds_total{instance=~\"$instance\"}[1m])",
           "format": "time_series",
@@ -4019,10 +3859,7 @@
           "refId": "C"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "avg(irate(node_cpu_seconds_total{mode=\"system\"}[1m]))",
           "interval": "",
@@ -4112,7 +3949,7 @@
       },
       "paceLength": 10,
       "percentage": false,
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -4127,10 +3964,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_disk_reads_completed_total{instance=~\"$instance\"}[1m])",
           "format": "time_series",
@@ -4142,10 +3976,7 @@
           "step": 10
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_disk_writes_completed_total{instance=~\"$instance\"}[1m])",
           "format": "time_series",
@@ -4157,10 +3988,7 @@
           "step": 10
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "node_disk_io_now{instance=~\"$instance\"}",
           "format": "time_series",
@@ -4242,7 +4070,7 @@
       },
       "paceLength": 10,
       "percentage": false,
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -4258,10 +4086,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_disk_read_bytes_total{instance=~\"$instance\"}[1m])",
           "format": "time_series",
@@ -4272,10 +4097,7 @@
           "step": 10
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_disk_written_bytes_total{instance=~\"$instance\"}[1m])",
           "format": "time_series",
@@ -4360,7 +4182,7 @@
       },
       "paceLength": 10,
       "percentage": false,
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -4375,10 +4197,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_disk_io_time_seconds_total{instance=~\"$instance\"}[1m])",
           "format": "time_series",
@@ -4390,10 +4209,7 @@
           "step": 10
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_disk_io_time_weighted_seconds_total{instance=~\"$instance\"}[1m])",
           "format": "time_series",
@@ -4404,10 +4220,7 @@
           "refId": "D"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_disk_read_time_seconds_total{instance=~\"$instance\"}[1m])",
           "format": "time_series",
@@ -4418,10 +4231,7 @@
           "refId": "B"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_disk_write_time_seconds_total{instance=~\"$instance\"}[1m])",
           "format": "time_series",
@@ -4500,7 +4310,7 @@
       },
       "paceLength": 10,
       "percentage": false,
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -4515,10 +4325,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_network_receive_bytes_total{instance=~'$instance',device!~'tap.*'}[5m])*8",
           "format": "time_series",
@@ -4529,10 +4336,7 @@
           "step": 4
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_network_transmit_bytes_total{instance=~'$instance',device!~'tap.*'}[5m])*8",
           "format": "time_series",
@@ -4613,7 +4417,7 @@
       },
       "paceLength": 10,
       "percentage": false,
-      "pluginVersion": "8.4.4",
+      "pluginVersion": "8.4.5",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -4623,10 +4427,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "node_netstat_Tcp_CurrEstab{instance=~'$instance'}",
           "format": "time_series",
@@ -4638,10 +4439,7 @@
           "step": 20
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "node_sockstat_TCP_tw{instance=~'$instance'}",
           "format": "time_series",
@@ -4651,10 +4449,7 @@
           "refId": "D"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_netstat_Tcp_ActiveOpens{instance=~'$instance'}[1m])",
           "format": "time_series",
@@ -4665,10 +4460,7 @@
           "refId": "B"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "irate(node_netstat_Tcp_PassiveOpens{instance=~'$instance'}[1m])",
           "format": "time_series",
@@ -4678,10 +4470,7 @@
           "refId": "C"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "node_sockstat_TCP_alloc{instance=~'$instance'}",
           "format": "time_series",
@@ -4691,10 +4480,7 @@
           "refId": "E"
         },
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
+          
           "exemplar": true,
           "expr": "node_sockstat_TCP_inuse{instance=~'$instance'}",
           "format": "time_series",
@@ -4737,7 +4523,7 @@
       }
     }
   ],
-  "refresh": false,
+  "refresh": "1m",
   "schemaVersion": 35,
   "style": "dark",
   "tags": [
@@ -4764,12 +4550,11 @@
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
-        "type": "query",
-        "datasource": "${DS_PROMETHEUS}"
+        "type": "query"
       },
       {
         "current": {},
-        "definition": "label_values(cosmos_validator_active, moniker)",
+        "definition": "label_values(cosmos_validator_status, moniker)",
         "hide": 0,
         "includeAll": false,
         "label": "moniker",
@@ -4777,15 +4562,14 @@
         "name": "moniker",
         "options": [],
         "query": {
-          "query": "label_values(cosmos_validator_active, moniker)",
+          "query": "label_values(cosmos_validator_status, moniker)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
-        "type": "query",
-        "datasource": "${DS_PROMETHEUS}"
+        "type": "query"
       },
       {
         "current": {},
@@ -4803,8 +4587,7 @@
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
-        "type": "query",
-        "datasource": "${DS_PROMETHEUS}"
+        "type": "query"
       }
     ]
   },
@@ -4816,6 +4599,6 @@
   "timezone": "",
   "title": "Cosmos Validator",
   "uid": "cosmos_validator",
-  "version": 15,
+  "version": 4,
   "weekStart": ""
 }

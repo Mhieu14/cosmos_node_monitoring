@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: Default # A uniquely identifiable name for the provider
+    folder: Services # The folder where to place the dashboards
+    type: file
+    options:
+      path: /etc/grafana/provisioning/dashboards/cosmos_validator.json
+
+
+# https://www.linkedin.com/pulse/grafana-auto-provision-data-sources-dashboards-mohsen-abasi?trk=pulse-article_more-articles_related-content-card
